@@ -3,10 +3,10 @@ const Discord = require('discord.js');
 const request = require('request');
 require('log-timestamp');
 
+const url = `http://mcapi.us/server/status?ip=${process.env.SERVER_IP}`;
+
 const client = new Discord.Client();
 client.login(process.env.DISCORD_TOKEN);
-
-const url = `http://mcapi.us/server/status?ip=${process.env.SERVER_IP}`;
 
 const updateStatus = function () {
     console.log('Updating status...');

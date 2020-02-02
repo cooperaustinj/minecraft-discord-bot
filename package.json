@@ -8,6 +8,7 @@
   "author": "",
   "dependencies": {
     "discord.js": "^11.5.1",
+    "dotenv": "^8.2.0",
     "log-timestamp": "^0.3.0",
     "request": "^2.88.0"
   }

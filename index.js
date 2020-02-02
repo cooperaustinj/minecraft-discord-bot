@@ -1,3 +1,4 @@
+require('dotenv').config();
 const Discord = require('discord.js');
 const request = require('request');
 require('log-timestamp');
@@ -20,8 +21,9 @@ const updateStatus = function () {
             client.user.setActivity('Offline');
             return;
         }
-        console.log('Status updated');
-        client.user.setActivity(`${body.players.now} players online`, { type: "WATCHING", url: 'https://google.com' });
+        const msg = `${body.players.now} players online`;
+        console.log(msg);
+        client.user.setActivity(msg, { type: "WATCHING", url: 'https://google.com' });
     });
 }
 

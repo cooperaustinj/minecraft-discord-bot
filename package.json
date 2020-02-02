@@ -1,0 +1,14 @@
+{
+  "name": "cooper-craft",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "log-timestamp": "^0.3.0",
+    "request": "^2.88.0"
+  }
+}
